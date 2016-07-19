@@ -1,0 +1,59 @@
+GIT
+  remote: https://github.com/vellotis/sprockets-standalone.git
+  revision: b712876cee89b2ffbc560a2f6195bf2c176574e2
+  branch: master
+  specs:
+    sprockets-standalone (1.2.1)
+      rake
+      sprockets (~> 3.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    autoprefixer-rails (6.3.7)
+      execjs
+    babel-source (5.8.35)
+    babel-transpiler (0.7.0)
+      babel-source (>= 4.0, < 6)
+      execjs (~> 2.0)
+    commonjs (0.2.7)
+    concurrent-ruby (1.0.2)
+    execjs (2.7.0)
+    filewatcher (0.5.3)
+      trollop (~> 2.0)
+    less (2.6.0)
+      commonjs (~> 0.2.7)
+    libv8 (3.16.14.15)
+    rack (2.0.1)
+    rake (11.2.2)
+    ref (2.0.0)
+    sass (3.4.22)
+    sprockets (3.6.3)
+      concurrent-ruby (~> 1.0)
+      rack (> 1, < 3)
+    sprockets-es6 (0.9.0)
+      babel-source (>= 5.8.11)
+      babel-transpiler
+      sprockets (>= 3.0.0)
+    therubyracer (0.12.2)
+      libv8 (~> 3.16.14.0)
+      ref
+    trollop (2.1.2)
+    uglifier (3.0.0)
+      execjs (>= 0.3.0, < 3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  autoprefixer-rails
+  filewatcher
+  less
+  sass
+  sprockets-es6
+  sprockets-standalone!
+  therubyracer
+  uglifier
+
+BUNDLED WITH
+   1.12.5
