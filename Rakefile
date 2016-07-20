@@ -26,5 +26,5 @@ Sprockets::Standalone::RakeTask.new(:assets) do |task, sprockets|
   sprockets.js_compressor  = :uglifier
   sprockets.css_compressor = :sass
 
-  sprockets.register_preprocessor 'text/css', AutoprefixerProcessor
+  sprockets.register_postprocessor 'text/css', AutoprefixerProcessor
 end
