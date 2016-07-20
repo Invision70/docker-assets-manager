@@ -15,10 +15,15 @@ class AutoprefixerProcessor < Sprockets::Processor
 end
 
 Sprockets::Standalone::RakeTask.new(:assets) do |task, sprockets|
-
-  task.assets = []
   task.sources = %w(assets/stylesheets assets/javascripts assets/images assets/fonts)
 
+  task.assets = []
+  task.sources.each do |dir_name|
+    Dir["#{dir_name}/*"].each do |file_name|
+      next if File.directory? file_name
+      task.assets << File.expand_path(file_name)
+    end
+  end
   task.output   = File.expand_path('../output', __FILE__)
   task.compress = false
   task.digest   = true
